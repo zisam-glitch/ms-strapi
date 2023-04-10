@@ -10,12 +10,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@ckeditor/ckeditor5-markdown-gfm": "^37.0.1",
+    "@ckeditor/ckeditor5-table": "^37.0.1",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-users-permissions": "4.9.0",
-    "@strapi/provider-upload-cloudinary": "^4.9.0",
     "@strapi/strapi": "4.9.0",
-    "pg": "8.8.0",
-    "stripe": "^11.17.0"
+    "pg": "^8.8.0",
+    "react-markdown": "^8.0.6",
+    "stripe": "^11.18.0"
   },
   "author": {
     "name": "A Strapi developer"

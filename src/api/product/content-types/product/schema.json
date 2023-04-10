@@ -32,11 +32,32 @@
     "price": {
       "type": "decimal"
     },
+    "mainDesc": {
+      "type": "richtext"
+    },
+    "support": {
+      "type": "richtext"
+    },
+    "specification": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "mappedBy": "products"
+      "inversedBy": "products"
+    },
+    "mainDescs": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
